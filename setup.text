@@ -1,0 +1,4 @@
+
+# database setup
+docker run -d -p 27017:27017 -v mongo-db:/data/db --name mango-db -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=weare12we mongodb/mongodb-community-server
+

@@ -51,12 +51,5 @@ const firebaseDeleteFile = async (filename: string, folderName: string) => {
   return 'successfully deleted';
 };
 
-// const updateGallery = async (docId,data) => {
-//     let update = await setDoc(doc(firestore, "gallery",docId), {
-//         name: data,
-//         src:"https://firebasestorage.googleapis.com/v0/b/mademypizza.appspot.com/o/images%2F"+data+"?alt=media&token=8823c378-8a7c-4685-b227-aa7573d9e07c"
-//       });
-//     return update;
-// }
 
 export { firebaseSaveFile, firebaseDeleteFile };

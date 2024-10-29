@@ -3,10 +3,10 @@ import * as admin from 'firebase-admin';
 const serviceAccounts = {
     project1: require('../../config/firebase/serviceAccountProject1.json'),
     project2: require('../../config/firebase/serviceAccountProject2.json'),
-    // เพิ่ม service account อื่น ๆ ตามต้องการ
 };
 
 const apps = {
+    
     project1: admin.initializeApp({
         credential: admin.credential.cert(serviceAccounts.project1),
         databaseURL: "https://<PROJECT1-ID>.firebaseio.com",
